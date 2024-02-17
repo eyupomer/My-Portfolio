@@ -1,46 +1,36 @@
-import instagram from "../assets/instagram.png";
-import twitter from "../assets/twitter.png";
-import joker from "../assets/joker.png";
-import movie from "../assets/Movie.png";
-import security from "../assets/security.png";
+import alto from "../assets/alto-holding.png"
+import cosweirdos from "../assets/cosweirdos.png"
+import sebil from "../assets/sebil-insaat.png"
+import titbas from "../assets/titbas.png"
+import skec from "../assets/skec.png"
 
 const Projects = () => {
   const projects = [
     {
       id: 1,
-      src: instagram,
-      tags: ["ReactJS", "Tailwind CSS"],
-      demo: "http://react-js-tailwind-css-instagram-clone.vercel.app/",
-      code: "https://github.com/eyupomer/ReactJS-TailwindCSS-Instagram-Clone"
+      src: cosweirdos,
+      demo: "https://cosweirdos-frontend.vercel.app",
     },
     {
       id: 2,
-      src: twitter,
-      tags: ["ReactJS", "Tailwind CSS", "Firebase"],
-      demo: "http://react-js-tailwind-css-twitter.vercel.app/",
-      code: "https://github.com/eyupomer/ReactJS-TailwindCSS-Twitter"
+      src: alto,
+      demo: "https://altoholding.kumsal.agency",
     },
     {
       id: 3,
-      src: movie,
-      tags: ["ReactJS", "Bootstrap", "Firebase", "Axios"],
-      demo: "http://react-bootstrap-movie-app.vercel.app/",
-      code: "https://github.com/eyupomer/React-Bootstrap-Movie-App"
+      src: sebil,
+      demo: "https://sebil-insaat.kumsal.agency",
     },
     {
       id: 4,
-      src: joker,
-      tags: ["ReactTS", "Styled Components", "Axios"],
-      demo: "http://react-ts-styled-component-joker.vercel.app/",
-      code: "https://github.com/eyupomer/ReactTS-StyledComponent-Joker"
+      src: titbas,
+      demo: "https://titbas.kumsal.agency",
     },
     {
       id: 5,
-      src: security,
-      tags: ["ReactJS", "Styled Components"],
-      demo: "https://react-styled-components-website.vercel.app/",
-      code: "https://github.com/eyupomer/React-StyledComponents-Website"
-    },
+      src: skec,
+      demo: "https://skec.ist",
+    }
   ];
 
   return (
@@ -56,28 +46,15 @@ const Projects = () => {
           <p className="py-6">Check out some of my work right here.</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-16 px-12 sm:px-0">
           {projects.map(({ id, src, tags, demo, code }) => (
-            <div key={id} className="shadow-md shadow-gray-600 rounded-lg flex flex-col gap-y-3">
+            <a href={demo} target="_blank" rel="noreferrer" key={id} className="shadow-md shadow-gray-600 overflow-hidden rounded-lg flex flex-col gap-y-3">
               <img
                 src={src}
                 alt="project img"
                 className="rounded-md duration-200 hover:scale-105"
               />
-              <div className="flex items-center justify-around border-b-2 py-2 border-gray-500">
-                {tags.map((tag) => (
-                  <p className="bg-gradient-to-b from-gray-900 to-gray-400 cursor-default px-1 text-center rounded-sm">{tag}</p>
-                ))}
-              </div>
-              <div className="flex items-center justify-center">
-                <a href={demo} target="_blank" rel="noreferrer" className="w-1/2 px-6 mx-4 duration-200 hover:scale-105">
-                  Demo
-                </a>
-                <a href={code} target="_blank" rel="noreferrer" className="w-1/2 px-6 m-4 duration-200 hover:scale-105">
-                  Code
-                </a>
-              </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>

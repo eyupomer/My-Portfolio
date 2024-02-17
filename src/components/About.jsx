@@ -8,7 +8,7 @@ const About = () => {
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">About</p>
         </div>
         <p className="text-xl mt-20">
-          A year experience in frontend development, interested in writing
+          Two years of experience in frontend development, interested in writing
           codes, skilled at developing complex solutions, creating responsive
           designs, possessing strong creative thinking skills and high energy.
           Ability to create algorithms effectively, and interact positively and
@@ -20,7 +20,7 @@ const About = () => {
         <br />
         <p className="text-xl">
           Especially interested in Front end/Web Development, HTML, CSS, JS,
-          ReactJS. Excited to learn new things and improve as a lifetime student.
+          ReactJS, NextJs and VueJs. Excited to learn new things and improve as a lifetime student.
         </p>
       </div>
     </div>

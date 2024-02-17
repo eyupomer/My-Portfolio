@@ -13,12 +13,12 @@ const Home = () => {
           <h2 className="text-4xl sm:text-7xl font-bold text-white">I'm a Frontend Developer</h2>
 
           <p className="text-gray-500 py-4 max-w-md">
-            I have a year of experience developing UI of web applications.
+            Having two years of experience in frontend development.
             Currently, I love to work on web application using technologies like
-            ReactJS, Bootstrap, Tailwind CSS and TypeScript.
+            ReactJS, NextJs, VueJs, Bootstrap, TailwindCSS and TypeScript.
           </p>
           <div>
-          <Link
+            <Link
               to="projects"
               smooth
               duration={500}
